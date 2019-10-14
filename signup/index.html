@@ -1,3 +1,6 @@
+<?php
+    $myPDO = new PDO('pgsql:host=localhost;dbname=dm2oitjf83u73', 'tjzntcroxpnjme', 'f26ae870fba99aa4ec86ad28f5b4e2df70de121c81324e818122615da4dcb59a');
+?>
 <!DOCTYPE html>
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -34,16 +37,50 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<nav>
-<div class="nav-wrapper">
-	<a href="#" class="brand-logo">Board Hub</a>
-	<ul id="nav-mobile" class="right hide-on-med-and-down">
-		<li><a href="sass.html">About Us</a></li>
-		<li><a href="badges.html">Contact</a></li>
-		<li><a href="collapsible.html">Sign In</a></li>
-	</ul>
-</div>
-</nav>
+<nav class="navbar navbar-expand-lg navbar-light main_box">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.html"><img src="../homepage/img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<li class="nav-item active"><a class="nav-link" href="../homepage/index.html">Home</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Shop</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="../signup/index.html">Shop Now!</a></li>
+									<!--<li class="nav-item"><a class="nav-link" href="single-product.html">Product Details</a></li>
+									<li class="nav-item"><a class="nav-link" href="checkout.html">Product Checkout</a></li>
+									<li class="nav-item"><a class="nav-link" href="cart.html">Shopping Cart</a></li>
+									<li class="nav-item"><a class="nav-link" href="confirmation.html">Confirmation</a></li> -->
+								</ul>
+							</li>
+							
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								 aria-expanded="false">Login</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="../Login/index.html">Login</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="../contactUs.html">Contact</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>
+							<li class="nav-item">
+								<button class="search"><span class="lnr lnr-magnifier" id="search"></span></button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
 
 
 
@@ -59,7 +96,7 @@
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-59">
 						Sign Up
-						<img src=./../logo.jpg>
+						<img src=./../logo.jpg height="100" width = "200">
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate="Valid name is required: English letters only">
