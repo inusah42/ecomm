@@ -45,9 +45,13 @@
 </div>
 </nav>
 
+
+
 <body style="background-color: #999999;">
 
+
 	<div class="limiter">
+
 		<div class="container-login100">
 			<div class="login100-more" style="background-image: url('https://www.theamericanconservative.com/wp-content/uploads/2018/06/shutterstock_259217189-554x350.jpg');"></div>
 
@@ -55,10 +59,10 @@
 				<form class="login100-form validate-form">
 					<span class="login100-form-title p-b-59">
 						Sign Up
-						<img src=../../logo.jpg>
+						<img src=./../logo.jpg>
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<div class="wrap-input100 validate-input" data-validate="Valid name is required: English letters only">
 						<span class="label-input100">Full Name</span>
 						<input class="input100" type="text" name="name" placeholder="Name...">
 						<span class="focus-input100"></span>
@@ -70,21 +74,99 @@
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Username is required">
+					<div class="wrap-input100 validate-input" data-validate="valid Username is required: Number and English letters only">
 						<span class="label-input100">Username</span>
 						<input class="input100" type="text" name="username" placeholder="Username...">
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+					<div class="wrap-input100 validate-input" data-validate = "valid password is required: 6-12 numbers or English letters">
 						<span class="label-input100">Password</span>
-						<input class="input100" type="text" name="pass" placeholder="*************">
+						<input id="pass" class="input100" type="text" name="pass" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Repeat Password is required">
+					<div class="wrap-input100 validate-input" data-validate = "Correct Repeat Password is required">
 						<span class="label-input100">Repeat Password</span>
-						<input class="input100" type="text" name="repeat-pass" placeholder="*************">
+						<input id="repeat-pass"class="input100" type="text" name="repeat-pass" placeholder="*************">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Address is required">
+						<span class="label-input100">Address</span>
+						<input class="input100" type="text" name="address" placeholder="address">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "valid City is required">
+						<span class="label-input100">City</span>
+						<input class="input100" type="text" name="city" placeholder="city">
+						<span class="focus-input100"></span>
+					</div>
+
+					
+<div class="wrap-input100 validate-input" data-validate = "valid City is required">
+				<span class="label-input100">state</span>	
+<select name="state" id="state">
+  <option value="" selected="selected">Select a State</option>
+  <option value="AL">Alabama</option>
+  <option value="AK">Alaska</option>
+  <option value="AZ">Arizona</option>
+  <option value="AR">Arkansas</option>
+  <option value="CA">California</option>
+  <option value="CO">Colorado</option>
+  <option value="CT">Connecticut</option>
+  <option value="DE">Delaware</option>
+  <option value="DC">District Of Columbia</option>
+  <option value="FL">Florida</option>
+  <option value="GA">Georgia</option>
+  <option value="HI">Hawaii</option>
+  <option value="ID">Idaho</option>
+  <option value="IL">Illinois</option>
+  <option value="IN">Indiana</option>
+  <option value="IA">Iowa</option>
+  <option value="KS">Kansas</option>
+  <option value="KY">Kentucky</option>
+  <option value="LA">Louisiana</option>
+  <option value="ME">Maine</option>
+  <option value="MD">Maryland</option>
+  <option value="MA">Massachusetts</option>
+  <option value="MI">Michigan</option>
+  <option value="MN">Minnesota</option>
+  <option value="MS">Mississippi</option>
+  <option value="MO">Missouri</option>
+  <option value="MT">Montana</option>
+  <option value="NE">Nebraska</option>
+  <option value="NV">Nevada</option>
+  <option value="NH">New Hampshire</option>
+  <option value="NJ">New Jersey</option>
+  <option value="NM">New Mexico</option>
+  <option value="NY">New York</option>
+  <option value="NC">North Carolina</option>
+  <option value="ND">North Dakota</option>
+  <option value="OH">Ohio</option>
+  <option value="OK">Oklahoma</option>
+  <option value="OR">Oregon</option>
+  <option value="PA">Pennsylvania</option>
+  <option value="RI">Rhode Island</option>
+  <option value="SC">South Carolina</option>
+  <option value="SD">South Dakota</option>
+  <option value="TN">Tennessee</option>
+  <option value="TX">Texas</option>
+  <option value="UT">Utah</option>
+  <option value="VT">Vermont</option>
+  <option value="VA">Virginia</option>
+  <option value="WA">Washington</option>
+  <option value="WV">West Virginia</option>
+  <option value="WI">Wisconsin</option>
+  <option value="WY">Wyoming</option>
+</select>
+<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "valid zip is required: 12345">
+						<span class="label-input100">Zip</span>
+						<input class="input100" type="text" name="zip" placeholder="zip">
 						<span class="focus-input100"></span>
 					</div>
 
