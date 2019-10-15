@@ -1,5 +1,5 @@
 <?php
-    $db_connection = pg_connect("host=localhost dbname=dm2oitjf83u73 user=tjzntcroxpnjme password=f26ae870fba99aa4ec86ad28f5b4e2df70de121c81324e818122615da4dcb59a");
+    $db_connection = pg_connect("host=ec2-174-129-41-127.compute-1.amazonaws.com dbname=dm2oitjf83u73 user=tjzntcroxpnjme password=f26ae870fba99aa4ec86ad28f5b4e2df70de121c81324e818122615da4dcb59a");
 
     
     $fullname = $_POST['name'];
