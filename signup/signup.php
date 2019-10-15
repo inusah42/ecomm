@@ -15,13 +15,15 @@
     
     if(pg_fetch_array(pg_query($db_connection,"select * from Users where username = '$username'"))){
         echo "<script>alert('username taken');window.location.href='index.html'</script>";
+    }else if(pg_fetch_array(pg_query($db_connection,"select * from Users where email = '$email'"))){
+        echo "<script>alert('email taken');window.location.href='index.html'</script>";
     } else{
         $sqlinsert="insert into Users(Full_Name,Email,Username,Password,Address,City,State,Zip) values('{$fullname}','{$email}','{$username}','{$hashpass}','{$address}','{$city}','{$state}','{$zip}')";
  
         if(!(pg_query($sqlinsert))){
             echo "<script>alert('failed');window.location.href='index.html'</script>";
         }else{
-            echo "<script>alert('Success!'')</script>";
+            echo "<script>alert('Success!')；window.location.href='../index.html'</script>";
         }
     }
 
