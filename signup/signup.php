@@ -23,12 +23,7 @@
         if(!(pg_query($sqlinsert))){
             echo "<script>alert('failed');window.location.href='index.html'</script>";
         }else{
-<<<<<<< HEAD
-            echo "<script>alert('Success!'')</script>";
-            
-=======
             echo "<script>alert('Success!')；window.location.href='../index.html'</script>";
->>>>>>> de043d990d7031c49a011a139916f04ae29f52e0
         }
     }
 
