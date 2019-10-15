@@ -22,6 +22,7 @@
             echo "<script>alert('failed');window.location.href='index.html'</script>";
         }else{
             echo "<script>alert('Success!'')</script>";
+            
         }
     }
 

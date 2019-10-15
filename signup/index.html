@@ -117,13 +117,13 @@
 
 					<div class="wrap-input100 validate-input" data-validate = "valid password is required: 6-12 numbers or English letters" >
 						<span class="label-input100">Password</span>
-						<input id="pass" class="input100" type="text" name="pass" placeholder="*************">
+						<input id="pass" class="input100" type="password" name="pass" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Correct Repeat Password is required" >
 						<span class="label-input100">Repeat Password</span>
-						<input id="repeat-pass"class="input100" type="text" name="repeat-pass" placeholder="*************">
+						<input id="repeat-pass"class="input100" type="password" name="repeat-pass" placeholder="*************">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -235,9 +235,11 @@
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<div class="login100-form-bgbtn"></div>
+							<form action="signup.php" method="post">
 							<button class="login100-form-btn" type = "submit">
 								Sign Up
 							</button>
+						</form>
 						</div>
 
 						<a href="../login/index.html" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
