@@ -66,6 +66,11 @@ var pass = document.getElementById("pass").value;
                 return false;
             }
         }
+        if($(input).attr('type') == 'address' || $(input).attr('name') == 'address') {
+            if($(input).val().trim().match(/^[a-zA-Z0-9,. ]+$/) == null) {
+                return false;
+            }
+        }
         if($(input).attr('type') == 'name' || $(input).attr('name') == 'name'){
             if($(input).val().trim().match(reg) == null) {
                 return false;
